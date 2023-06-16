@@ -18,3 +18,8 @@ public class MemoryGame {
 		cards.add("D");
 		cards.add("D");
 		Collections.shuffle(cards);
+
+		
+		String[] board = new String[cards.size()];
+		boolean[] flipped = new boolean[cards.size()];
+		int pairsFound = 0;
