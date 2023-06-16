@@ -23,3 +23,17 @@ public class MemoryGame {
 		String[] board = new String[cards.size()];
 		boolean[] flipped = new boolean[cards.size()];
 		int pairsFound = 0;
+
+		while (pairsFound < 4) {
+			printBoard(board);
+			int firstIndex = getCardIndex(
+				scanner, board, flipped,
+				"Enter index of first card to flip:");
+			board[firstIndex] = cards.get(firstIndex);
+			flipped[firstIndex] = true;
+			printBoard(board);
+			int secondIndex = getCardIndex(
+				scanner, board, flipped,
+				"Enter index of second card to flip:");
+			board[secondIndex] = cards.get(secondIndex);
+			flipped[secondIndex] = true;
