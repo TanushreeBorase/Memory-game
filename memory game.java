@@ -2,13 +2,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class MemoryGame {
+public class MemoryGame 
+{
 
 	public static void main(String[] args)
+	
 	{
 
 		Scanner scanner = new Scanner(System.in);
 		ArrayList<String> cards = new ArrayList<>();
+		
 		cards.add("A");
 		cards.add("A");
 		cards.add("B");
@@ -17,23 +20,30 @@ public class MemoryGame {
 		cards.add("C");
 		cards.add("D");
 		cards.add("D");
+		
 		Collections.shuffle(cards);
 
 		
 		String[] board = new String[cards.size()];
 		boolean[] flipped = new boolean[cards.size()];
+		
 		int pairsFound = 0;
 
 		while (pairsFound < 4) {
 			printBoard(board);
+			
 			int firstIndex = getCardIndex(
 				scanner, board, flipped,
 				"Enter index of first card to flip:");
+			
 			board[firstIndex] = cards.get(firstIndex);
 			flipped[firstIndex] = true;
+			
 			printBoard(board);
 			int secondIndex = getCardIndex(
 				scanner, board, flipped,
 				"Enter index of second card to flip:");
+			
 			board[secondIndex] = cards.get(secondIndex);
+			
 			flipped[secondIndex] = true;
