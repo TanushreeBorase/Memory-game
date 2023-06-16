@@ -29,7 +29,8 @@ public class MemoryGame
 		
 		int pairsFound = 0;
 
-		while (pairsFound < 4) {
+		while (pairsFound < 4) 
+		{
 			printBoard(board);
 			
 			int firstIndex = getCardIndex(
