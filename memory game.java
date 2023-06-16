@@ -10,3 +10,11 @@ public class MemoryGame {
 		Scanner scanner = new Scanner(System.in);
 		ArrayList<String> cards = new ArrayList<>();
 		cards.add("A");
+		cards.add("A");
+		cards.add("B");
+		cards.add("B");
+		cards.add("C");
+		cards.add("C");
+		cards.add("D");
+		cards.add("D");
+		Collections.shuffle(cards);
