@@ -50,3 +50,12 @@ public class MemoryGame
 			board[secondIndex] = cards.get(secondIndex);
 			
 			flipped[secondIndex] = true;
+
+			
+			if (cards.get(firstIndex)
+					.equals(cards.get(secondIndex))) {
+				System.out.println("You found a pair!");
+				pairsFound++;
+			}
+
+			
