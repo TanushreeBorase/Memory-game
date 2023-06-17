@@ -68,5 +68,7 @@ public class MemoryGame
 			}
 		}
 
+		System.out.println("Congratulations, you won!");
+	}
 		
 			
