@@ -58,4 +58,15 @@ public class MemoryGame
 				pairsFound++;
 			}
 
+			else {
+				System.out.println(
+					"Sorry, those cards don't match.");
+				board[firstIndex] = " ";
+				board[secondIndex] = " ";
+				flipped[firstIndex] = false;
+				flipped[secondIndex] = false;
+			}
+		}
+
+		
 			
