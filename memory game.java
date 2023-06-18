@@ -53,12 +53,14 @@ public class MemoryGame
 
 			
 			if (cards.get(firstIndex)
-					.equals(cards.get(secondIndex))) {
+					.equals(cards.get(secondIndex)))
+			{
 				System.out.println("You found a pair!");
 				pairsFound++;
 			}
 
-			else {
+			else 
+			{
 				System.out.println(
 					"Sorry, those cards don't match.");
 				board[firstIndex] = " ";
@@ -77,14 +79,17 @@ public class MemoryGame
 								String prompt)
 	{
 		int index;
-		while (true) {
+		while (true) 
+		{
 			System.out.println(prompt);
 			index = scanner.nextInt();
-			if (index < 0 || index >= board.length) {
+			if (index < 0 || index >= board.length) 
+			{
 				System.out.println(
 					"Invalid index, try again.");
 			}
-		else if (flipped[index]) {
+		else if (flipped[index]) 
+		{
 				System.out.println(
 					"Card already flipped, try again.");
 			}
