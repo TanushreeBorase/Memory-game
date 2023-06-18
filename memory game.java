@@ -71,4 +71,9 @@ public class MemoryGame
 		System.out.println("Congratulations, you won!");
 	}
 		
-			
+	public static int getCardIndex(Scanner scanner,
+								String[] board,
+								boolean[] flipped,
+								String prompt)
+	{
+		
