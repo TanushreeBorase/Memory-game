@@ -94,3 +94,5 @@ public class MemoryGame
 		}
 		return index;
 	}
+	public static void printBoard(String[] board)
+	{
