@@ -101,4 +101,10 @@ public class MemoryGame
 	}
 	public static void printBoard(String[] board)
 	{
+		for (int i = 0; i < board.length; i++) {
+			System.out.print("| " + board[i] + " ");
+		}
+		System.out.println("|");
+	}
+}
 		
