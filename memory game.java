@@ -1,4 +1,5 @@
 // Java program to implement memory game
+// Two arrays are created to represent the game board: board and flipped
 
 import java.util.ArrayList;
 import java.util.Collections;
